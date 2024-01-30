@@ -1,7 +1,21 @@
+import { Printer, Newspaper } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import Particles from "app/components/particles";
 import { ArrowBigLeft } from "lucide-react";
+
+const printButtons = [
+  {
+    icon: <Printer size={20} />,
+    href: "/resume.pdf",
+    label: "Resume",
+  },
+  {
+    icon: <Newspaper size={20} />, // Replace YourIconComponentHere with the appropriate icon component for transcript
+    href: "/transcript.pdf",
+    label: "Transcript",
+  },
+];
 
 const navigation = [
   { icon: <ArrowBigLeft size={20} />, name: "Back to Home", href: "/" },
@@ -13,7 +27,7 @@ const frontendSkills = [
   { language: "CSS", icon: "css-icon.png", level: "Intermediate" },
   { language: "JavaScript", icon: "js-icon.png", level: "Intermediate" },
   { language: "React", icon: "react-icon.png", level: "Beginner" },
-  { language: "Bootstrap", icon: "bootstrap-icon.png", level: "Beginner" },
+  
 ];
 
 const backendSkills = [
@@ -23,15 +37,33 @@ const backendSkills = [
   { language: "GitHub", icon: "github-icon.png", level: "Intermediate" },
   { language: "MySQL", icon: "mysql-icon.png", level: "Intermediate" },
   { language: "Laragon", icon: "laragon-icon.png", level: "Intermediate" },
-  { language: "R", icon: "r-icon.png", level: "Intermediate" },
+  { language: "R", icon: "r-icon.png", level: "Beginner" },
 ];
 
 const webFrameworkSkills = [
   { framework: "Laravel", icon: "laravel-icon.png", level: "Intermediate" },
   { framework: "Django", icon: "django-icon.png", level: "Intermediate" },
+  { framework: "Next.js", icon: "next-icon.png", level: "Beginner" },
+  { framework: "Bootstrap", icon: "bootstrap-icon.png", level: "Beginner" },
+];
+
+const graphic = [
+  { app: "Photoshop", icon: "photoshop-icon.png", level: "Intermediate" },
+  { app: "Premier Pro", icon: "pp-icon.png", level: "Advance" },
+  { app: "Illustrator", icon: "ai-icon.png", level: "Beginner" },
+  { app: "After Effect", icon: "ae-icon.png", level: "Beginner" },
+  { app: "Figma", icon: "figma-icon.png", level: "Intermediate" },
+  { app: "Canva", icon: "c-icon.png", level: "Advance" },
+];
+
+const network = [
+  { app: "Cisco Packet Tracer", icon: "cpt-icon.png", level: "Intermediate" },
+  { app: "Kali Linux", icon: "kali-icon.png", level: "Beginner" },
+  { app: "VMware", icon: "vm-icon.png", level: "Advance" },
 ];
 
 export default function AboutMe() {
+  
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-4 mr-auto">
@@ -53,17 +85,20 @@ export default function AboutMe() {
         <img
           src="/profile.png"
           alt="Profile"
-          className="w-48 h-48 rounded-full mb-4"
+          className="w-64 h-64 rounded-full mb-4"
           style={{ margin: "0 auto" }}
         />
         <br />
         <h1 className="text-4xl text-white mb-2 font-display">
           Ahmad Danial
         </h1>
-        <p className="text-2sm text-zinc-500 mb-8">
+        <p className="text-sm text-zinc-500 mb-8">
           Fresh Graduate | Full Stack Developer | Based in Malaysia
         </p>
-        <p className="text-sm text-zinc-500 mb-2">
+        <h2 className="text-2xl text-white mb-4 font-display">
+          About Me
+        </h2>
+        <p className="text-sm text-zinc-500 mb-4">
           Hello! I'm Danial, a dedicated Computer Science student with a passion
           for technology and a strong desire to make a meaningful impact in the
           world of software development.<br></br> Currently, I am pursuing a
@@ -71,10 +106,38 @@ export default function AboutMe() {
           Selangor, where I have been gaining valuable insights into<br></br>
           the world of coding, algorithms, and problem-solving.
         </p>
-      </div>
+        
+       {/* Styled "Print Resume" and "Print Transcript" buttons with inline styles */}
+        <div className="my-6 flex justify-center">
+          {printButtons.map((button) => (
+            <a
+              key={button.href}
+              href={button.href}
+              download={button.label.toLowerCase() + ".pdf"}
+              style={{
+                backgroundColor: "#4a90e2", // Change to your desired background color
+                color: "#fff", // Change to your desired text color
+                padding: "1rem 2rem", // Adjust padding as needed
+                borderRadius: "1.5rem", // Adjust border-radius as needed
+                fontWeight: 600,
+                transition: "all 300ms ease",
+                cursor: "pointer",
+                textDecoration: "none",
+                display: "flex", // Use flex display to align items horizontally
+                alignItems: "center", // Align items vertically in the center
+                justifyContent: "center", // Center the content horizontally
+                margin: "0 0.5rem", // Add margin between buttons if needed
+              }}
+            >
+              {button.icon}
+              <span className="ml-2">{button.label}</span>
+            </a>
+          ))}
+        </div>
+    </div>
 
-      <div className="my-16 text-center">
-        <h2 className="text-2xl text-white mb-4 font-display">
+      <div className="my-6 text-center">
+        <h2 className="text-2xl text-white mb-6 font-display">
           Programming Skills
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8">
@@ -140,6 +203,58 @@ export default function AboutMe() {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="my-6 text-center">
+      <h2 className="text-2xl text-white mb-6 font-display">
+          Technical Skills
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-16">
+          <div>
+            <h3 className="text-lg text-white mb-2">Graphic Design & Multimedia</h3>
+            <div className="grid grid-cols-2 gap-4">
+              {graphic.map((skill) => (
+                <div
+                  key={skill.app}
+                  className="text-center mb-4"
+                >
+                  <img
+                    src={`/${skill.icon}`}
+                    alt={skill.app}
+                    className="w-12 h-12 mb-2 mx-auto"
+                  />
+                  <p className="text-sm text-zinc-500">
+                    {skill.app} - {skill.level}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg text-white mb-2">Network & Security</h3>
+            <div className="grid grid-cols-2 gap-4 justify-items-center">
+              {network.map((skill) => (
+                <div key={skill.app} className="text-center mb-4">
+                  <img
+                    src={`/${skill.icon}`}
+                    alt={skill.app}
+                    className={`w-12 h-12 mb-2 mx-auto 
+                      ${skill.app === 'VMware' ? 'vm-logo' : ''} 
+                      `}
+                    style={skill.app === 'VMware' ? { width: '80px' } : 
+                          {}} 
+                  />
+                  <p className="text-sm text-zinc-500">
+                    {skill.app} - {skill.level}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          
         </div>
       </div>
 

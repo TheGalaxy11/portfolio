@@ -1,18 +1,18 @@
-import { Github, Mail, Instagram } from "lucide-react";
+import { Github, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
 const socials = [
   {
-    icon: <Instagram size={20} />,
-    href: "https://www.instagram.com/ahm.danial__",
-    label: "Instagram",
-    handle: "@ahmdanial__",
+    icon: <Phone size={20} />,
+    href: "https://wa.me/60169937037?text=Hi%20,%20Mr%20Danial",
+    label: "Whatsapp",
+    handle: "@ahmdanial",
   },
   {
     icon: <Mail size={20} />,
-    href: "mailto:ahmaddani20037@gmail.com",  // Use mailto: scheme for email
+    href: "mailto:tim@gmail.com",  // Use mailto: scheme for email
     label: "Email",
     handle: "danny@work.com",
   },
