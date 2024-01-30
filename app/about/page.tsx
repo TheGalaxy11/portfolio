@@ -29,7 +29,6 @@ const backendSkills = [
 const webFrameworkSkills = [
   { framework: "Laravel", icon: "laravel-icon.png", level: "Intermediate" },
   { framework: "Django", icon: "django-icon.png", level: "Intermediate" },
-
 ];
 
 export default function AboutMe() {
@@ -52,7 +51,7 @@ export default function AboutMe() {
 
       <div className="my-8 text-center">
         <img
-          src="/profile.png" // Add the correct path to your profile picture
+          src="/profile.png"
           alt="Profile"
           className="w-48 h-48 rounded-full mb-4"
           style={{ margin: "0 auto" }}
@@ -65,10 +64,12 @@ export default function AboutMe() {
           Fresh Graduate | Full Stack Developer | Based in Malaysia
         </p>
         <p className="text-sm text-zinc-500 mb-2">
-        Hello! I'm Danial, a dedicated Computer Science student with a passion for technology and a 
-        strong desire to make a meaningful impact in the world of software development.<br></br> 
-        Currently, I am pursuing a Diploma in Computer Science at Kolej Profesional MARA Beranang, Selangor, 
-        where I have been gaining valuable insights into<br></br> the world of coding, algorithms, and problem-solving.
+          Hello! I'm Danial, a dedicated Computer Science student with a passion
+          for technology and a strong desire to make a meaningful impact in the
+          world of software development.<br></br> Currently, I am pursuing a
+          Diploma in Computer Science at Kolej Profesional MARA Beranang,
+          Selangor, where I have been gaining valuable insights into<br></br>
+          the world of coding, algorithms, and problem-solving.
         </p>
       </div>
 
@@ -76,16 +77,19 @@ export default function AboutMe() {
         <h2 className="text-2xl text-white mb-4 font-display">
           Programming Skills
         </h2>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8">
           <div>
             <h3 className="text-lg text-white mb-2">Frontend</h3>
             <div className="grid grid-cols-2 gap-4">
               {frontendSkills.map((skill) => (
-                <div key={skill.language} className="text-center mb-4">
+                <div
+                  key={skill.language}
+                  className="text-center mb-4"
+                >
                   <img
                     src={`/${skill.icon}`}
                     alt={skill.language}
-                    className="w-12 h-12 mb-2 ml-16"
+                    className="w-12 h-12 mb-2 mx-auto"
                   />
                   <p className="text-sm text-zinc-500">
                     {skill.language} - {skill.level}
@@ -103,14 +107,13 @@ export default function AboutMe() {
                   <img
                     src={`/${skill.icon}`}
                     alt={skill.language}
-                    className={`w-12 h-12 mb-2 ml-12 
+                    className={`w-12 h-12 mb-2 mx-auto 
                       ${skill.language === 'PHP' ? 'php-logo' : ''} 
                       ${skill.language === 'R' ? 'r-logo' : ''} 
-                      ${skill.language === 'MySQL' ? 'mysql-logo' :''}`}
-
-                    style={skill.language === 'PHP' ? { width: '90px', marginLeft:'14px' } : 
-                          (skill.language === 'R' ? { marginLeft:'25px' } : 
-                          (skill.language === 'MySQL' ? { width:'70px', marginRight:'40px' } : 
+                      ${skill.language === 'MySQL' ? 'mysql-logo' : ''}`}
+                    style={skill.language === 'PHP' ? { width: '90px' } : 
+                          (skill.language === 'R' ? { width: '50px' } : 
+                          (skill.language === 'MySQL' ? { width: '70px' } : 
                           {}))} 
                   />
                   <p className="text-sm text-zinc-500">
@@ -128,8 +131,8 @@ export default function AboutMe() {
                   <img
                     src={`/${skill.icon}`}
                     alt={skill.framework}
-                    className={`w-12 h-12 mb-2 ${skill.framework === 'Laravel' ? 'laravel-logo' : ''} ${skill.framework === 'Django' ? 'django-logo' : ''}`}
-                    style={skill.framework === 'Laravel' ? { width: '180px' } : (skill.framework === 'Django' ? { width: '120px', marginLeft:'25px' } : {})} />
+                    className={`w-12 h-12 mb-2 mx-auto ${skill.framework === 'Laravel' ? 'laravel-logo' : ''} ${skill.framework === 'Django' ? 'django-logo' : ''}`}
+                    style={skill.framework === 'Laravel' ? { width: '120px' } : (skill.framework === 'Django' ? { width: '80px' } : {})} />
                   <p className="text-sm text-zinc-500">
                     {skill.framework} - {skill.level}
                   </p>
