@@ -34,7 +34,7 @@ const webFrameworkSkills = [
 
 export default function AboutMe() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-4 mr-auto">
         <ul className="flex items-center justify-start gap-4">
           {navigation.map((item) => (
@@ -67,7 +67,8 @@ export default function AboutMe() {
         <p className="text-sm text-zinc-500 mb-2">
         Hello! I'm Danial, a dedicated Computer Science student with a passion for technology and a 
         strong desire to make a meaningful impact in the world of software development.<br></br> 
-        Currently, I am pursuing a Diploma in Computer Science at Kolej Profesional MARA Beranang, Selangor, where I have been gaining valuable insights into the world of coding, algorithms, and problem-solving.
+        Currently, I am pursuing a Diploma in Computer Science at Kolej Profesional MARA Beranang, Selangor, 
+        where I have been gaining valuable insights into<br></br> the world of coding, algorithms, and problem-solving.
         </p>
       </div>
 
