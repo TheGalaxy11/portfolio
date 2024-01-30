@@ -9,16 +9,16 @@ export const metadata: Metadata = {
     default: "Danny's Portfolio",
     template: "%s | chronark.com",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "This is danny's portfolio",
   openGraph: {
-    title: "danny portfolio",
+    title: "ahmdanial Portfolio",
     description:
       "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+    url: "https://ahmdanial.vercel.app/",
+    siteName: "ahmdanial.com",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://i.ibb.co/94pHkmW/og.png",
         width: 1920,
         height: 1080,
       },
