@@ -7,13 +7,13 @@ import { Analytics } from "./components/analytics";
 export const metadata: Metadata = {
   title: {
     default: "Danny's Portfolio",
-    template: "%s | chronark.com",
+    template: "%s | danny.com",
   },
-  description: "This is ahmdanial portfolio",
+  description: "Welcome to danny's portfolio",
   openGraph: {
     title: "ahmdanial Portfolio",
     description:
-      "This is ahmdanial portfolio",
+      "Welcome to danny's portfolio",
     url: "https://ahmdanial.vercel.app/",
     siteName: "ahmdanial.com",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "Danny",
     card: "summary_large_image",
   },
   icons: {
