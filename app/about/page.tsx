@@ -57,7 +57,7 @@ const graphic = [
 ];
 
 const network = [
-  { app: "Cisco Packet Tracer", icon: "cpt-icon.png", level: "Intermediate" },
+  { app: "Cisco PT", icon: "cpt-icon.png", level: "Intermediate" },
   { app: "Kali Linux", icon: "kali-icon.png", level: "Beginner" },
   { app: "VMware", icon: "vm-icon.png", level: "Advance" },
 ];
@@ -101,7 +101,7 @@ export default function AboutMe() {
         <p className="text-sm text-zinc-500 mb-4">
           Hello! I'm Danial, a dedicated Computer Science student with a passion
           for technology and a strong desire to make a meaningful impact in the
-          world of software development.<br></br> Currently, I am pursuing a
+          world of <br ></br>software development. Currently, I am pursuing a
           Diploma in Computer Science at Kolej Profesional MARA Beranang,
           Selangor, where I have been gaining valuable insights into<br></br>
           the world of coding, algorithms, and problem-solving.
@@ -137,12 +137,12 @@ export default function AboutMe() {
     </div>
 
       <div className="my-6 text-center">
-        <h2 className="text-2xl text-white mb-6 font-display">
+        <h2 className="text-2xl text-white mb-10 font-display">
           Programming Skills
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg text-white mb-2">Frontend</h3>
+            <h3 className="text-lg text-white mb-8">Frontend</h3>
             <div className="grid grid-cols-2 gap-4">
               {frontendSkills.map((skill) => (
                 <div
@@ -163,7 +163,7 @@ export default function AboutMe() {
           </div>
 
           <div>
-            <h3 className="text-lg text-white mb-2">Backend</h3>
+            <h3 className="text-lg text-white mb-8">Backend</h3>
             <div className="grid grid-cols-2 gap-4 justify-items-center">
               {backendSkills.map((skill) => (
                 <div key={skill.language} className="text-center mb-4">
@@ -187,7 +187,7 @@ export default function AboutMe() {
             </div>
           </div>
           <div>
-            <h3 className="text-lg text-white mb-2">Web Framework</h3>
+            <h3 className="text-lg text-white mb-8">Web Framework</h3>
             <div className="grid grid-cols-2 gap-4 ">
               {webFrameworkSkills.map((skill) => (
                 <div key={skill.framework} className="text-center mb-4">
@@ -206,35 +206,33 @@ export default function AboutMe() {
         </div>
       </div>
 
-      <div className="my-6 text-center">
-      <h2 className="text-2xl text-white mb-6 font-display">
+      <div className="my-12 text-center">
+      <h2 className="text-2xl text-white mb-10 font-display">
           Technical Skills
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-16">
-          <div>
-            <h3 className="text-lg text-white mb-2">Graphic Design & Multimedia</h3>
-            <div className="grid grid-cols-2 gap-4">
-              {graphic.map((skill) => (
-                <div
-                  key={skill.app}
-                  className="text-center mb-4"
-                >
-                  <img
-                    src={`/${skill.icon}`}
-                    alt={skill.app}
-                    className="w-12 h-12 mb-2 mx-auto"
-                  />
-                  <p className="text-sm text-zinc-500">
-                    {skill.app} - {skill.level}
-                  </p>
-                </div>
-              ))}
-            </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-20">
+        <div>
+          <h3 className="text-lg text-white mb-8">Graphic Design & Multimedia</h3>
+          <div className="grid grid-cols-2 gap-2">
+            {graphic.map((skill) => (
+              <div key={skill.app} className="text-center mb-4">
+                <img
+                  src={`/${skill.icon}`}
+                  alt={skill.app}
+                  className="w-12 h-12 mb-2 mx-auto"
+                />
+                <p className="text-sm text-zinc-500">
+                  {skill.app} - {skill.level}
+                </p>
+              </div>
+            ))}
           </div>
+        </div>
+
 
           <div>
-            <h3 className="text-lg text-white mb-2">Network & Security</h3>
-            <div className="grid grid-cols-2 gap-4 justify-items-center">
+            <h3 className="text-lg text-white mb-8">Network & Security</h3>
+            <div className="grid grid-cols-2 gap-2 justify-items-center">
               {network.map((skill) => (
                 <div key={skill.app} className="text-center mb-4">
                   <img
