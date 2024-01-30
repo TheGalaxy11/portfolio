@@ -132,7 +132,7 @@ export default function AboutMe() {
                     src={`/${skill.icon}`}
                     alt={skill.framework}
                     className={`w-12 h-12 mb-2 mx-auto ${skill.framework === 'Laravel' ? 'laravel-logo' : ''} ${skill.framework === 'Django' ? 'django-logo' : ''}`}
-                    style={skill.framework === 'Laravel' ? { width: '120px' } : (skill.framework === 'Django' ? { width: '80px' } : {})} />
+                    style={skill.framework === 'Laravel' ? { width: '150px' } : (skill.framework === 'Django' ? { width: '110px' } : {})} />
                   <p className="text-sm text-zinc-500">
                     {skill.framework} - {skill.level}
                   </p>
