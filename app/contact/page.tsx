@@ -8,19 +8,19 @@ const socials = [
     icon: <Phone size={20} />,
     href: "https://wa.me/60169937037?text=Hi%20,%20Mr%20Danial",
     label: "Whatsapp",
-    handle: "@ahmdanial",
+    handle: "@danial",
   },
   {
     icon: <Mail size={20} />,
-    href: "mailto:tim@gmail.com",  // Use mailto: scheme for email
+    href: "mailto:ahmaddani20037@gmail.com",  // Use mailto: scheme for email
     label: "Email",
     handle: "danny@work.com",
   },
   {
     icon: <Github size={20} />,
-    href: "https://github.com/TheGalaxy11",
+    href: "https://github.com/ahmdanial",
     label: "Github",
-    handle: "TheGalaxy11",
+    handle: "ahmdanial",
   },
 ];
 
