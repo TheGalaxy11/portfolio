@@ -12,7 +12,7 @@ const socials = [
   },
   {
     icon: <Mail size={20} />,
-    href: "mailto:ahmaddani20037@gmail.com",  // Use mailto: scheme for email
+    href: "mailto:ahmdanial.work@gmail.com",  // Use mailto: scheme for email
     label: "Email",
     handle: "danny@work.com",
   },
