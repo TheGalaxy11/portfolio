@@ -48,18 +48,18 @@ const webFrameworkSkills = [
 ];
 
 const graphic = [
+  { app: "Canva", icon: "c-icon.png", level: "Advance" },
   { app: "Photoshop", icon: "photoshop-icon.png", level: "Intermediate" },
   { app: "Premier Pro", icon: "pp-icon.png", level: "Advance" },
   { app: "Illustrator", icon: "ai-icon.png", level: "Beginner" },
   { app: "After Effect", icon: "ae-icon.png", level: "Beginner" },
   { app: "Figma", icon: "figma-icon.png", level: "Intermediate" },
-  { app: "Canva", icon: "c-icon.png", level: "Advance" },
 ];
 
 const network = [
+  { app: "VMware", icon: "vm-icon.png", level: "Advance" },
   { app: "Cisco PT", icon: "cpt-icon.png", level: "Intermediate" },
   { app: "Kali Linux", icon: "kali-icon.png", level: "Beginner" },
-  { app: "VMware", icon: "vm-icon.png", level: "Advance" },
 ];
 
 export default function AboutMe() {
