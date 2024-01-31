@@ -49,11 +49,11 @@ const webFrameworkSkills = [
 
 const graphic = [
   { app: "Canva", icon: "c-icon.png", level: "Advance" },
-  { app: "Photoshop", icon: "photoshop-icon.png", level: "Intermediate" },
   { app: "Premier Pro", icon: "pp-icon.png", level: "Advance" },
-  { app: "Illustrator", icon: "ai-icon.png", level: "Beginner" },
-  { app: "After Effect", icon: "ae-icon.png", level: "Beginner" },
+  { app: "Photoshop", icon: "photoshop-icon.png", level: "Intermediate" },
+  { app: "Illustrator", icon: "ai-icon.png", level: "Intermediate" },
   { app: "Figma", icon: "figma-icon.png", level: "Intermediate" },
+  { app: "After Effect", icon: "ae-icon.png", level: "Beginner" },
 ];
 
 const network = [
