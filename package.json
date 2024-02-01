@@ -13,7 +13,6 @@
     "@next/mdx": "^13.5.4",
     "@upstash/kafka": "^1.3.5",
     "@upstash/redis": "^1.28.2",
-    "@vercel/speed-insights": "^1.0.9",
     "contentlayer": "^0.3.4",
     "framer-motion": "^10.16.4",
     "lucide-react": "^0.284.0",
