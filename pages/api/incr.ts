@@ -2,7 +2,9 @@ import { Redis } from "@upstash/redis";
 import { NextRequest, NextResponse } from "next/server";
 
 const redis = Redis.fromEnv();
-export const runtime = 'edge'
+export const config = {
+  runtime: "edge",
+};
 
 export default async function incr(req: NextRequest): Promise<NextResponse> {
   if (req.method !== "POST") {
