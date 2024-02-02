@@ -2,7 +2,7 @@ import { Printer, Newspaper } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import Particles from "app/components/particles";
-import { ArrowBigLeft } from "lucide-react";
+import { Navigation } from "../components/nav";
 
 const printButtons = [
   {
@@ -17,73 +17,55 @@ const printButtons = [
   },
 ];
 
-const navigation = [
-  { icon: <ArrowBigLeft size={20} />, name: "Back to Home", href: "/" },
-  // Add other navigation items as needed
-];
-
 const frontendSkills = [
-  { language: "HTML", icon: "html-icon.png", level: "Advance" },
-  { language: "CSS", icon: "css-icon.png", level: "Intermediate" },
-  { language: "JavaScript", icon: "js-icon.png", level: "Intermediate" },
-  { language: "React", icon: "react-icon.png", level: "Beginner" },
+  { language: "HTML", icon: "icon/html-icon.png", level: "Advance" },
+  { language: "CSS", icon: "icon/css-icon.png", level: "Intermediate" },
+  { language: "JavaScript", icon: "icon/js-icon.png", level: "Intermediate" },
+  { language: "React", icon: "icon/react-icon.png", level: "Beginner" },
   
 ];
 
 const backendSkills = [
-  { language: "Python", icon: "python-icon.png", level: "Intermediate" },
-  { language: "Node.js", icon: "nodejs-icon.png", level: "Intermediate" },
-  { language: "PHP", icon: "php-icon.png", level: "Intermediate" },
-  { language: "GitHub", icon: "github-icon.png", level: "Intermediate" },
-  { language: "MySQL", icon: "mysql-icon.png", level: "Intermediate" },
-  { language: "Laragon", icon: "laragon-icon.png", level: "Intermediate" },
-  { language: "R", icon: "r-icon.png", level: "Beginner" },
+  { language: "Python", icon: "icon/python-icon.png", level: "Intermediate" },
+  { language: "Node.js", icon: "icon/nodejs-icon.png", level: "Intermediate" },
+  { language: "PHP", icon: "icon/php-icon.png", level: "Intermediate" },
+  { language: "GitHub", icon: "icon/github-icon.png", level: "Intermediate" },
+  { language: "MySQL", icon: "icon/mysql-icon.png", level: "Intermediate" },
+  { language: "Laragon", icon: "icon/laragon-icon.png", level: "Intermediate" },
+  { language: "R", icon: "icon/r-icon.png", level: "Beginner" },
 ];
 
 const webFrameworkSkills = [
-  { framework: "Laravel", icon: "laravel-icon.png", level: "Intermediate" },
-  { framework: "Django", icon: "django-icon.png", level: "Intermediate" },
-  { framework: "Next.js", icon: "next-icon.png", level: "Beginner" },
-  { framework: "Bootstrap", icon: "bootstrap-icon.png", level: "Beginner" },
+  { framework: "Laravel", icon: "icon/laravel-icon.png", level: "Intermediate" },
+  { framework: "Django", icon: "icon/django-icon.png", level: "Intermediate" },
+  { framework: "Next.js", icon: "icon/next-icon.png", level: "Beginner" },
+  { framework: "Bootstrap", icon: "icon/bootstrap-icon.png", level: "Beginner" },
 ];
 
 const graphic = [
-  { app: "Canva", icon: "c-icon.png", level: "Advance" },
-  { app: "Premier Pro", icon: "pp-icon.png", level: "Advance" },
-  { app: "Photoshop", icon: "photoshop-icon.png", level: "Intermediate" },
-  { app: "Illustrator", icon: "ai-icon.png", level: "Intermediate" },
-  { app: "Figma", icon: "figma-icon.png", level: "Intermediate" },
-  { app: "After Effect", icon: "ae-icon.png", level: "Beginner" },
+  { app: "Canva", icon: "icon/c-icon.png", level: "Advance" },
+  { app: "Premier Pro", icon: "icon/pp-icon.png", level: "Advance" },
+  { app: "Photoshop", icon: "icon/photoshop-icon.png", level: "Intermediate" },
+  { app: "Illustrator", icon: "icon/ai-icon.png", level: "Intermediate" },
+  { app: "Figma", icon: "icon/figma-icon.png", level: "Intermediate" },
+  { app: "After Effect", icon: "icon/ae-icon.png", level: "Beginner" },
 ];
 
 const network = [
-  { app: "VMware", icon: "vm-icon.png", level: "Advance" },
-  { app: "Cisco PT", icon: "cpt-icon.png", level: "Intermediate" },
-  { app: "Kali Linux", icon: "kali-icon.png", level: "Beginner" },
+  { app: "VMware", icon: "icon/vm-icon.png", level: "Advance" },
+  { app: "Cisco PT", icon: "icon/cpt-icon.png", level: "Intermediate" },
+  { app: "Kali Linux", icon: "icon/kali-icon.png", level: "Beginner" },
 ];
 
 export default function AboutMe() {
   
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black">
-      <nav className="my-4 mr-auto">
-        <ul className="flex items-center justify-start gap-4">
-          {navigation.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 flex items-center ml-6"
-            >
-              {item.icon}
-              <span className="ml-2">{item.name}</span>
-            </Link>
-          ))}
-        </ul>
-      </nav>
+      <Navigation />
 
       <div className="my-8 text-center">
         <img
-          src="/profile.png"
+          src="icon/profile.png"
           alt="Profile"
           className="w-64 h-64 rounded-full mb-4"
           style={{ margin: "0 auto" }}
@@ -98,10 +80,10 @@ export default function AboutMe() {
         <h2 className="text-2xl text-white mb-4 font-display">
           About Me
         </h2>
-        <p className="text-sm text-zinc-500 mb-4">
+        <p className="text-sm text-zinc-500 mb-4 ml-4 mr-4">
           Hello! I'm Danial, a dedicated Computer Science student with a passion
           for technology and a strong desire to make a meaningful impact in the
-          world of <br ></br>software development. Currently, I am pursuing a
+          world of software development. <br ></br>Currently, I am pursuing a
           Diploma in Computer Science at Kolej Profesional MARA Beranang,
           Selangor, where I have been gaining valuable insights into<br></br>
           the world of coding, algorithms, and problem-solving.

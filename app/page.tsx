@@ -28,16 +28,16 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={100}
+        quantity={250}
       />
-      <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+      <h1 className="z-10 text-6xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
         danny's portfolio
       </h1>
-      <h2 className="z-10 text-2xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-4xl md:text-6xl whitespace-nowrap bg-clip-text ">
+      <h2 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-4xl md:text-6xl whitespace-nowrap bg-clip-text ">
         full stack developer</h2>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <div className="my-16 text-center animate-fade-in">
+      <div className="my-8 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
         Hi, I'm Ahmad Danial,Fresh Graduate. Passionate about Fullstack, Data Scientist, Machine Learning and AI. Based in Malaysia.
         </h2>
