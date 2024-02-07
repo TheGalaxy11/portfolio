@@ -11,7 +11,7 @@ export const revalidate = 0;
 const redis = new Redis({
   url: 'https://regular-wildcat-36079.upstash.io',
   token: 'AYzvASQgYTg4NThlMmYtOGU3Yi00ZDdiLThiNmItMjMwMjQ2MDk1MTE4N2E3YTQ2MjU2NmRiNGQ1NzgzMzE5NWUxYWQzMTUyOTk=',
-})
+});
 
 export default async function ProjectsPage() {
   const views = (
