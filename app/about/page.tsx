@@ -1,5 +1,4 @@
 import { Printer, Newspaper } from "lucide-react";
-import Link from "next/link";
 import React from "react";
 import Particles from "app/components/particles";
 import { Navigation } from "../components/nav";

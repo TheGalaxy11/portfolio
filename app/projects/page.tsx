@@ -7,9 +7,12 @@ import { Article } from "./article";
 import { Redis } from "@upstash/redis";
 import { Eye } from "lucide-react";
 
-const redis = Redis.fromEnv();
+export const revalidate = 0;
+const redis = new Redis({
+  url: 'https://regular-wildcat-36079.upstash.io',
+  token: 'AYzvASQgYTg4NThlMmYtOGU3Yi00ZDdiLThiNmItMjMwMjQ2MDk1MTE4N2E3YTQ2MjU2NmRiNGQ1NzgzMzE5NWUxYWQzMTUyOTk=',
+})
 
-export const revalidate = 60;
 export default async function ProjectsPage() {
   const views = (
     await redis.mget<number[]>(
