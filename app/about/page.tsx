@@ -31,6 +31,7 @@ const backendSkills = [
   { language: "GitHub", icon: "icon/github-icon.png", level: "Intermediate" },
   { language: "MySQL", icon: "icon/mysql-icon.png", level: "Intermediate" },
   { language: "Laragon", icon: "icon/laragon-icon.png", level: "Intermediate" },
+  { language: "Redis", icon: "icon/redis-icon.png", level: "Beginner" },
   { language: "R", icon: "icon/r-icon.png", level: "Beginner" },
 ];
 
