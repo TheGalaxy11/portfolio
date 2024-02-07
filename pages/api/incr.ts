@@ -1,7 +1,11 @@
 import { Redis } from "@upstash/redis";
 import { NextRequest, NextResponse } from "next/server";
 
-const redis = Redis.fromEnv();
+const redis = new Redis({
+  url: 'https://regular-wildcat-36079.upstash.io',
+  token: 'AYzvASQgYTg4NThlMmYtOGU3Yi00ZDdiLThiNmItMjMwMjQ2MDk1MTE4N2E3YTQ2MjU2NmRiNGQ1NzgzMzE5NWUxYWQzMTUyOTk=',
+})
+
 export const config = {
   runtime: "edge",
 };
