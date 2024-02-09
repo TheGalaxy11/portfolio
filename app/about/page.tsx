@@ -2,6 +2,7 @@ import { Printer, Newspaper } from "lucide-react";
 import React from "react";
 import Particles from "app/components/particles";
 import { Navigation } from "../components/nav";
+import { Analytics } from '@vercel/analytics/react';
 
 const printButtons = [
   {
@@ -20,6 +21,7 @@ const frontendSkills = [
   { language: "HTML", icon: "icon/html-icon.png", level: "Advance" },
   { language: "CSS", icon: "icon/css-icon.png", level: "Intermediate" },
   { language: "JavaScript", icon: "icon/js-icon.png", level: "Intermediate" },
+  { language: "TypeScript", icon: "icon/ts-icon.png", level: "Beginner" },
   { language: "React", icon: "icon/react-icon.png", level: "Beginner" },
   
 ];
@@ -239,6 +241,7 @@ export default function AboutMe() {
       </div>
 
       <Particles className="absolute inset-0 -z-10" quantity={100} />
+      <Analytics />
     
     </div>
   );

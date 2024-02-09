@@ -6,6 +6,7 @@ import { Card } from "../components/card";
 import { Article } from "./article";
 import { Redis } from "@upstash/redis";
 import { Eye } from "lucide-react";
+import { Analytics } from '@vercel/analytics/react';
 
 export const revalidate = 0;
 const redis = new Redis({
@@ -113,6 +114,8 @@ export default async function ProjectsPage() {
         </div>
         </div>
         <div className="hidden w-full h-px md:block bg-zinc-800" />
+        <Analytics />
+
 
         <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
           <div className="grid grid-cols-1 gap-4">
