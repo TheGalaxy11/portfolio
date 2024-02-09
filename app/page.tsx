@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
 
 const navigation = [
   { name: "About", href: "/about" },
@@ -41,7 +41,7 @@ export default function Home() {
         <h2 className="text-sm text-zinc-500 ">
         Hi, I'm Ahmad Danial,Fresh Graduate. Passionate about Fullstack, Data Scientist, Machine Learning and AI. Based in Malaysia.
         </h2>
-        <SpeedInsights />
+        <Analytics />
       </div>
     </div>
   );
