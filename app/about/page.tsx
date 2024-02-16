@@ -82,12 +82,12 @@ export default function AboutMe() {
         <h2 className="text-2xl text-white mb-4 font-display">
           About Me
         </h2>
-        <p className="text-sm text-zinc-500 mb-4 ml-4 mr-4">
+        <p className="text-sm text-zinc-500 mb-4 ml-10 mr-10">
           Hello! I'm Danial, a dedicated Computer Science student with a passion
           for technology and a strong desire to make a meaningful impact in the
-          world of software development. <br ></br>Currently, I am pursuing a
+          world of software development. Currently, I am graduated from
           Diploma in Computer Science at Kolej Profesional MARA Beranang,
-          Selangor, where I have been gaining valuable insights into<br></br>
+          Selangor, where I have been gaining valuable insights into
           the world of coding, algorithms, and problem-solving.
         </p>
         

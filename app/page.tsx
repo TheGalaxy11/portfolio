@@ -39,7 +39,7 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-8 ml-8 mr-8 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
-        Hi, I'm Ahmad Danial,Fresh Graduate. Passionate about Fullstack, Data Scientist, Machine Learning and AI. Based in Malaysia.
+        Hi, I'm Ahmad Danial, Fresh Graduate. Passionate about Fullstack, Data Scientist, Machine Learning and AI. Based in Malaysia.
         </h2>
         <Analytics />
       </div>
