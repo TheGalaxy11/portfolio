@@ -1,4 +1,4 @@
-import { Github, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Phone } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -11,10 +11,10 @@ const socials = [
     handle: "@danial",
   },
   {
-    icon: <Mail size={20} />,
-    href: "mailto:ahmdanial.work@gmail.com",  // Use mailto: scheme for email
-    label: "Email",
-    handle: "danny@work.com",
+    icon: <Linkedin size={20} />,
+    href: "https://www.linkedin.com/in/ahmdanial/",  // Use mailto: scheme for email
+    label: "LinkedIn",
+    handle: "Ahmad Danial",
   },
   {
     icon: <Github size={20} />,

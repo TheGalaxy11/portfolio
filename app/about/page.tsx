@@ -30,7 +30,7 @@ const backendSkills = [
   { language: "Python", icon: "icon/python-icon.png", level: "Intermediate" },
   { language: "Node.js", icon: "icon/nodejs-icon.png", level: "Intermediate" },
   { language: "PHP", icon: "icon/php-icon.png", level: "Intermediate" },
-  { language: "GitHub", icon: "icon/github-icon.png", level: "Intermediate" },
+  { language: "Java", icon: "icon/java-icon.png", level: "Intermediate" },
   { language: "MySQL", icon: "icon/mysql-icon.png", level: "Intermediate" },
   { language: "Laragon", icon: "icon/laragon-icon.png", level: "Intermediate" },
   { language: "Redis", icon: "icon/redis-icon.png", level: "Beginner" },
@@ -40,6 +40,7 @@ const backendSkills = [
 const webFrameworkSkills = [
   { framework: "Laravel", icon: "icon/laravel-icon.png", level: "Intermediate" },
   { framework: "Django", icon: "icon/django-icon.png", level: "Intermediate" },
+  { framework: "Liferay", icon: "icon/life-icon.png", level: "Intermediate" },
   { framework: "Next.js", icon: "icon/next-icon.png", level: "Beginner" },
   { framework: "Bootstrap", icon: "icon/bootstrap-icon.png", level: "Beginner" },
 ];
@@ -157,11 +158,14 @@ export default function AboutMe() {
                     className={`w-12 h-12 mb-2 mx-auto 
                       ${skill.language === 'PHP' ? 'php-logo' : ''} 
                       ${skill.language === 'R' ? 'r-logo' : ''} 
-                      ${skill.language === 'MySQL' ? 'mysql-logo' : ''}`}
+                      ${skill.language === 'MySQL' ? 'mysql-logo' : ''}
+                      ${skill.language === 'Java' ? 'java-logo' : ''}
+                      `}
                     style={skill.language === 'PHP' ? { width: '90px' } : 
                           (skill.language === 'R' ? { width: '50px' } : 
                           (skill.language === 'MySQL' ? { width: '70px' } : 
-                          {}))} 
+                          (skill.language === 'Java' ? { width: '55px' } : 
+                          {})))} 
                   />
                   <p className="text-sm text-zinc-500">
                     {skill.language} - {skill.level}
@@ -178,7 +182,8 @@ export default function AboutMe() {
                   <img
                     src={`/${skill.icon}`}
                     alt={skill.framework}
-                    className={`w-12 h-12 mb-2 mx-auto ${skill.framework === 'Laravel' ? 'laravel-logo' : ''} ${skill.framework === 'Django' ? 'django-logo' : ''}`}
+                    className={`w-12 h-12 mb-2 mx-auto ${skill.framework === 'Laravel' ? 'laravel-logo' : ''} ${skill.framework === 'Django' ? 'django-logo' : ''}
+                    ${skill.framework === 'Liferay' ? 'life-icon' : ''}`}
                     style={skill.framework === 'Laravel' ? { width: '150px' } : (skill.framework === 'Django' ? { width: '110px' } : {})} />
                   <p className="text-sm text-zinc-500">
                     {skill.framework} - {skill.level}
