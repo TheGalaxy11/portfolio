@@ -22,6 +22,8 @@ const socials = [
     label: "Github",
     handle: "ahmdanial",
   },
+  
+
 ];
 
 export default function Example() {

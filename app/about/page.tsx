@@ -1,4 +1,4 @@
-import { Printer, Newspaper } from "lucide-react";
+import { Printer, Youtube } from "lucide-react";
 import React from "react";
 import Particles from "app/components/particles";
 import { Navigation } from "../components/nav";
@@ -10,10 +10,15 @@ const printButtons = [
     href: "/resume.pdf",
     label: "Resume",
   },
-  {
+  /*{
     icon: <Newspaper size={20} />, // Replace YourIconComponentHere with the appropriate icon component for transcript
     href: "/transcript.pdf",
     label: "Transcript",
+  },*/
+  {
+    icon: <Youtube size={20} />, // Replace YourIconComponentHere with the appropriate icon component for transcript
+    href: "https://www.youtube.com/watch?v=yz043jPSIIE&ab_channel=danny",
+    label: "Watch on Youtube",
   },
 ];
 
@@ -78,7 +83,7 @@ export default function AboutMe() {
           Ahmad Danial
         </h1>
         <p className="text-sm text-zinc-500 mb-8">
-          Fresh Graduate | Full Stack Developer | Based in Malaysia
+          Full Stack Developer | Based in Malaysia
         </p>
         <h2 className="text-2xl text-white mb-4 font-display">
           About Me
@@ -100,7 +105,7 @@ export default function AboutMe() {
               href={button.href}
               download={button.label.toLowerCase() + ".pdf"}
               style={{
-                backgroundColor: "#4a90e2", // Change to your desired background color
+                backgroundColor: "rgba(161,161,170,0.5)", // Change to your desired background color
                 color: "#fff", // Change to your desired text color
                 padding: "1rem 2rem", // Adjust padding as needed
                 borderRadius: "1.5rem", // Adjust border-radius as needed
